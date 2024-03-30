@@ -1,4 +1,6 @@
-# MacOsLinuxRDPBindings
+# Converts macOS keybindings to Microsoft Remote Desktop
+
+I forked this from the orignal repository because the key mappings there were wrong. All else remains the same.
 
 ## What this repository for?
 
