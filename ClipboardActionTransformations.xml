@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- transformation for clipboard actions (cut copy paste) -->
 <!-- layout specific -->
-<!-- More transfomations found on stackoverflow -->
-<!-- https://stackoverflow.com/a/73130370 -->
 <layouts>
     <!-- Dvorak X C V are not on same physical position as on US keyboard. -->
     <layout name="com.apple.keylayout.Dvorak">
@@ -247,28 +245,39 @@
             </transform>
             <transform>
                 <from command="1" key="LeftArrow" />
-                <to control="1" key="Home"/>
+                <to key="Home"/>
             </transform>
             <transform>
                 <from command="1" key="RightArrow" />
-                <to control="1" key="End"/>
-            </transform>
-            <!-- same shortcuts, but with shift -->
-            <transform>
-                <from shift="1" command="1" key="LeftArrow" />
-                <to shift="1" control="1" key="Home"/>
-            </transform>
-            <transform>
-                <from shift="1" command="1" key="RightArrow" />
-                <to shift="1" control="1" key="End"/>
+                <to key="End"/>
             </transform>
             <transform>
                 <from option="1" key="LeftArrow" />
                 <to control="1" key="LeftArrow"/>
             </transform>
             <transform>
+                <from option="1" key="Delete" />
+                <to control="1" key="Delete"/>
+            </transform>
+            <transform>
                 <from option="1" key="RightArrow" />
                 <to control="1" key="RightArrow"/>
+            </transform>
+            <transform>
+                <from shift="1" command="1" key="LeftArrow" />
+                <to shift="1" key="Home"/>
+            </transform>
+            <transform>
+                <from shift="1" command="1" key="RightArrow" />
+                <to shift="1" key="End"/>
+            </transform>
+            <transform>
+                <from shift="1" option="1" key="LeftArrow" />
+                <to shift="1" control="1" key="LeftArrow"/>
+            </transform>
+            <transform>
+                <from shift="1" option="1" key="RightArrow" />
+                <to shift="1" control="1" key="RightArrow"/>
             </transform>
             <transform>
                 <from command="1" key="UpArrow" />
@@ -445,7 +454,7 @@
             <transform>
                 <from command="1" option="1" key="RightArrow" />
                 <to control="1" option="1" key="RightArrow"/>
-            </transform>
+            </transform> -->
             <transform>
                 <from command="1" option="1" key="UpArrow" />
                 <to control="1" option="1" key="UpArrow"/>
@@ -453,7 +462,7 @@
             <transform>
                 <from command="1" option="1" key="DownArrow" />
                 <to control="1" option="1" key="DownArrow"/>
-            </transform> -->
+            </transform>
             <transform>
                 <from command="1" shift="1" key="Slash"/>
                 <to control="1" shift="1" key="Slash"/>
@@ -614,18 +623,18 @@
                 <from command="1" shift="1" key="M"/>
                 <to control="1" shift="1" key="M"/>
             </transform>
-            <transform>
-                <from option="1" shift="1" key="LeftArrow" />
+            <!-- <transform>
+                <from command="1" shift="1" key="LeftArrow" />
                 <to control="1" shift="1" key="LeftArrow"/>
             </transform>
             <transform>
-                <from option="1" shift="1" key="RightArrow" />
+                <from command="1" shift="1" key="RightArrow" />
                 <to control="1" shift="1" key="RightArrow"/>
-            </transform>
-            <!-- <transform>
+            </transform> -->
+            <transform>
                 <from command="1" shift="1" key="UpArrow" />
                 <to control="1" shift="1" key="UpArrow"/>
-            </transform> -->
+            </transform>
             <transform>
                 <from command="1" shift="1" key="DownArrow" />
                 <to control="1" shift="1" key="DownArrow"/>
@@ -790,7 +799,7 @@
                 <from command="1" option="1" shift="1" key="M"/>
                 <to control="1" option="1" shift="1" key="M"/>
             </transform>
-            <!-- <transform>
+            <transform>
                 <from command="1" option="1" shift="1" key="LeftArrow" />
                 <to control="1" option="1" shift="1" key="LeftArrow"/>
             </transform>
@@ -805,7 +814,7 @@
             <transform>
                 <from command="1" option="1" shift="1" key="DownArrow" />
                 <to control="1" option="1" shift="1" key="DownArrow"/>
-            </transform> -->
+            </transform>
             <!-- / Keyboard transformations for MacOs -> Linux RDP -->
         </transformations>
     </layout>
